@@ -7,8 +7,6 @@ from torch.utils.data import TensorDataset, DataLoader
 import torch.nn as nn
 import time
 
-
-
 print("==========> Preparing data")
 raw_data = pd.read_csv('../data/train.csv', dtype={'acoustic_data': np.int16, 'time_to_failure': np.float32})
 batch_size = 1024
